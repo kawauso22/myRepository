@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">Portfolio</div>
+
+    <button id="themeToggle" class="theme-btn">🌙</button>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="nav" id="nav">
+        <a href="#about">私について</a>
+        <a href="#spec">PCスペック</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+</header>
+
+<main>
+    <h1 class="welcome">welcome</h1>
+
+    <section id="about">
+        <h2 class="watashi">私について</h2>
+        <p class="syoukai">
+            ２００３年５月１９日生まれ。<br>
+            高校生の頃にゲーミングPCを購入し、そこからゲームにハマる。<br>
+            ゲームを通してプログラミングに興味を持ち、HTMLから独学で学習。<br>
+            現在はCSS / Python / Javaを使用し、<br>
+            Webデザイナーとしてサイト制作を行っています。
+        </p>
+    </section>
+
+    <section id="spec">
+        <h2 class="PC">PCスペック・使用デバイス一覧</h2>
+        <p class="spec">
+            CPU : Intel Core i7-12700<br>
+            GPU : RTX 3070Ti<br>
+            RAM : 32GB<br>
+            Storage : M.2 1TB + SSD 4TB
+        </p>
+    </section>
+
+    <section>
+        <h2 class="haisin">↓ 各SNSはこちら ↓</h2>
+        <div class="sns">
+            <a href="https://x.com/K_awauso22">
+                <img src="images/logo-black.png" class="Xlogo" alt="X">
+            </a>
+            <a href="https://www.twitch.tv/kawauso_fps22">
+                <img src="images/twitch.png" class="twitch" alt="Twitch">
+            </a>
+            <a href="https://twitcasting.tv/k_awauso22">
+                <img src="images/icon_white_black_rounded_2048.png" class="cas" alt="TwitCasting">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-area">
+        <h2 class="toiawase">お問合せはこちらから</h2>
+
+        <form action="https://formspree.io/f/mzdzzjrd" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="お名前" required>
+            <input type="email" name="email" placeholder="メール" required>
+            <textarea name="message" placeholder="内容" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

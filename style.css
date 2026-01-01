@@ -1,0 +1,177 @@
+/* ===== 基本 ===== */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #000;
+}
+
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: #fff;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ===== ナビ ===== */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== ハンバーガー ===== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+}
+
+/* ===== テキスト ===== */
+.welcome {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.watashi {
+    font-size: 32px;
+}
+
+.syoukai {
+    font-size: 20px;
+}
+
+.PC {
+    font-size: 32px;
+    color: red;
+}
+
+.spec {
+    font-size: 20px;
+}
+
+.haisin {
+    font-size: 28px;
+    color: red;
+}
+
+.toiawase {
+    font-size: 28px;
+}
+
+/* ===== SNS ===== */
+.sns {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.Xlogo, .twitch, .cas {
+    width: 50px;
+}
+
+/* ===== フォーム ===== */
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ===== ダークモード ===== */
+body.dark {
+    background: #111;
+    color: #fff;
+}
+
+body.dark .header {
+    background: #111;
+}
+
+body.dark .hamburger span {
+    background: #fff;
+}
+
+/* ===== スマホ ===== */
+@media screen and (max-width: 768px) {
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        padding: 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    body.dark .nav {
+        background: #222;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .welcome {
+        font-size: 40px;
+    }
+}
